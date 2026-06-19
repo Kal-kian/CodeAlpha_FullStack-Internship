@@ -80,4 +80,12 @@ process.on('SIGTERM', () => {
     console.log('MongoDB connection closed.');
     process.exit(0);
   });
+  // Serve React frontend in production
+if (process.env.NODE_ENV === 'production') {
+  const buildPath = path.join(__dirname, '..', 'client', 'build');
+  app.use(express.static(buildPath));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(buildPath, 'index.html'));
+  });
+}
 });
