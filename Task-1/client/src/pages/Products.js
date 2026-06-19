@@ -238,11 +238,11 @@ const Products = () => {
                   >
                     <div className="relative">
                       <img
-                        src={product.images?.[0] || 'https://via.placeholder.com/400x300?text=No+Image'}
+                        src={product.images?.[0] || 'https://placehold.co/400x300?text=No+Image'}
                         alt={product.name}
                         className="w-full h-48 object-cover"
                         onError={(e) => {
-                          e.target.src = 'https://via.placeholder.com/400x300?text=No+Image';
+                          e.target.src = 'https://placehold.co/400x300?text=No+Image';
                         }}
                       />
                       <span className={`absolute top-2 left-2 px-2 py-1 rounded-full text-xs font-semibold ${

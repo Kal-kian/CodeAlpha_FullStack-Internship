@@ -81,11 +81,11 @@ const ProductDetail = () => {
           {/* Main Image */}
           <div className="bg-white rounded-lg overflow-hidden shadow-md mb-4">
             <img
-              src={product.images?.[selectedImage] || 'https://via.placeholder.com/600x600?text=No+Image'}
+              src={product.images?.[selectedImage] || 'https://placehold.co/600x600?text=No+Image'}
               alt={product.name}
               className="w-full h-96 object-contain"
               onError={(e) => {
-                e.target.src = 'https://via.placeholder.com/600x600?text=No+Image';
+                e.target.src = 'https://placehold.co/600x600?text=No+Image';
               }}
             />
           </div>
@@ -105,7 +105,7 @@ const ProductDetail = () => {
                   }`}
                   onClick={() => setSelectedImage(index)}
                   onError={(e) => {
-                    e.target.src = 'https://via.placeholder.com/100x100?text=No+Image';
+                    e.target.src = 'https://placehold.co/100x100?text=No+Image';
                   }}
                 />
               ))}

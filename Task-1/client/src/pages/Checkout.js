@@ -184,11 +184,11 @@ const Checkout = () => {
               {cart.items.map((item) => (
                 <div key={item.product?._id} className="flex items-center gap-3">
                   <img
-                    src={item.product?.images?.[0] || 'https://via.placeholder.com/50x50?text=No+Image'}
+                    src={item.product?.images?.[0] || 'https://placehold.co/50x50?text=No+Image'}
                     alt={item.product?.name}
                     className="w-12 h-12 object-cover rounded"
                     onError={(e) => {
-                      e.target.src = 'https://via.placeholder.com/50x50?text=No+Image';
+                      e.target.src = 'https://placehold.co/50x50?text=No+Image';
                     }}
                   />
                   <div className="flex-grow min-w-0">

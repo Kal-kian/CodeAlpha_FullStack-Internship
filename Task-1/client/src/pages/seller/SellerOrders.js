@@ -171,11 +171,11 @@ const SellerOrders = () => {
                   {order.items?.map((item, index) => (
                     <div key={index} className="flex items-center gap-4 py-2">
                       <img
-                        src={item.product?.images?.[0] || 'https://via.placeholder.com/60'}
+                        src={item.product?.images?.[0] || 'https://placehold.co/60'}
                         alt={item.product?.name}
                         className="w-16 h-16 object-cover rounded-lg"
                         onError={(e) => {
-                          e.target.src = 'https://via.placeholder.com/60?text=No+Image';
+                          e.target.src = 'https://placehold.co/60?text=No+Image';
                         }}
                       />
                       <div className="flex-grow">

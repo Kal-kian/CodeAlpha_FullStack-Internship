@@ -340,7 +340,7 @@ const AdminDashboard = () => {
                   <tr key={product._id} className="border-t hover:bg-gray-50">
                     <td className="px-4 py-2">
                       <div className="flex items-center gap-2">
-                        <img src={product.images?.[0] || 'https://via.placeholder.com/30'} alt="" className="w-8 h-8 rounded object-cover" />
+                        <img src={product.images?.[0] || 'https://placehold.co/30'} alt="" className="w-8 h-8 rounded object-cover" />
                         <span className="font-medium truncate max-w-[200px]">{product.name}</span>
                       </div>
                     </td>

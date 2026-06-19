@@ -85,11 +85,11 @@ const Cart = () => {
               {/* Product Image */}
               <Link to={`/products/${item.product?._id}`} className="flex-shrink-0">
                 <img
-                  src={item.product?.images?.[0] || 'https://via.placeholder.com/150x150?text=No+Image'}
+                  src={item.product?.images?.[0] || 'https://placehold.co/150x150?text=No+Image'}
                   alt={item.product?.name}
                   className="w-24 h-24 sm:w-32 sm:h-32 object-cover rounded-lg"
                   onError={(e) => {
-                    e.target.src = 'https://via.placeholder.com/150x150?text=No+Image';
+                    e.target.src = 'https://placehold.co/150x150?text=No+Image';
                   }}
                 />
               </Link>

@@ -234,11 +234,11 @@ const SellerDashboard = () => {
                     <td className="px-6 py-4">
                       <div className="flex items-center">
                         <img
-                          src={product.images?.[0] || 'https://via.placeholder.com/40'}
+                          src={product.images?.[0] || 'https:///40'}
                           alt={product.name}
                           className="w-10 h-10 object-cover rounded"
                           onError={(e) => {
-                            e.target.src = 'https://via.placeholder.com/40?text=N/A';
+                            e.target.src = 'https:///40?text=N/A';
                           }}
                         />
                         <div className="ml-3">

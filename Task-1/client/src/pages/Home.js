@@ -141,11 +141,11 @@ const Home = () => {
                 <Link key={product._id} to={`/products/${product._id}`} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="relative">
                     <img
-                      src={product.images?.[0] || 'https://via.placeholder.com/400x300?text=No+Image'}
+                      src={product.images?.[0] || 'https://placehold.co/400x300?text=No+Image'}
                       alt={product.name}
                       className="w-full h-48 object-cover"
                       onError={(e) => {
-                        e.target.src = 'https://via.placeholder.com/400x300?text=No+Image';
+                        e.target.src = 'https://placehold.co/400x300?text=No+Image';
                       }}
                     />
                     <span className="absolute top-2 left-2 px-2 py-1 rounded-full text-xs font-semibold bg-green-100 text-green-800">
@@ -176,11 +176,11 @@ const Home = () => {
                 <Link key={product._id} to={`/products/${product._id}`} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="relative">
                     <img
-                      src={product.images?.[0] || 'https://via.placeholder.com/400x300?text=No+Image'}
+                      src={product.images?.[0] || 'https://placehold.co/400x300?text=No+Image'}
                       alt={product.name}
                       className="w-full h-48 object-cover"
                       onError={(e) => {
-                        e.target.src = 'https://via.placeholder.com/400x300?text=No+Image';
+                        e.target.src = 'https://placehold.co/400x300?text=No+Image';
                       }}
                     />
                     <span className="absolute top-2 left-2 px-2 py-1 rounded-full text-xs font-semibold bg-yellow-100 text-yellow-800">

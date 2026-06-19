@@ -63,7 +63,7 @@ const MyOrders = () => {
               {order.items?.map((item, index) => (
                 <div key={index} className="flex items-center gap-3 py-2 border-t">
                   <img
-                    src={item.product?.images?.[0] || 'https://via.placeholder.com/50'}
+                    src={item.product?.images?.[0] || 'https://placehold.co/50'}
                     alt={item.product?.name}
                     className="w-12 h-12 object-cover rounded"
                   />
